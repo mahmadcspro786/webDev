@@ -1,0 +1,39 @@
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+    background-color: aquamarine;
+}
+.one{
+    background-color: #141414;
+    color: beige;
+    font-size: medium;
+}
+.two{
+    background-color: #123bd1;
+    color: rgb(182, 182, 33);
+    font-size: medium;
+}
+.three{
+    background-color: #6a2d2d;
+    color: rgb(108, 53, 92);
+    font-size: medium;
+}
+.four{
+    background-color: #23cd64;
+    color: rgb(28, 28, 22);
+    font-size: medium;
+}
+.five{
+    background-color: #de031c;
+    color: beige;
+    font-size: medium;
+
+}
+*{ margin: 0;
+ 
+}
+body{
+  background-image: url(D:/webdev/web/assets/beach.jpeg);
+  background-size: cover;
+ b
+}

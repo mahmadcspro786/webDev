@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Seires</title>
+</head>
+<body>
+    <h1>Display Series</h1>
+    <p id="output"></p>
+    <br>
+    <script>
+          function displaySeries()
+          {
+            const start=1;
+            const step=2;
+            const length=10;
+            let series=[];
+            for(let i=0;i<10;i++)
+          {
+            series.push(start+i*step);
+          }
+          document.getElementById("output").innerText=series.join(",");
+    
+          }
+        displaySeries();
+    </script>
+    
+</body>
+</html>

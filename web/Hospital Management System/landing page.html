@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="../Hospital Management System/style.css">
+</head>
+
+<body>
+    <section class="navbar">
+        <nav>
+            <div id="nav">
+                <div class="logo">
+                    <img id="img1" src="../Hospital Management System/assets/logo navbar (2).png" alt="logo">
+                    <h1 id="h1">Hospital Management System</h1>
+                </div>
+                <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+                <div class="nav-links">
+                    <ul>
+                        <li><a  onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+                        <li><a href="../Hospital Management System/about.html" target="_blank" >About Us</a></li>
+                        <li><a href="../Hospital Management System/contact.html" target="_blank">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+        </div>
+
+    </section>
+    <section class="content">
+        <div class="content-text">
+            <br>
+            <br>
+            <br>
+            <h1 id="welcome">Welcome to Our Hospital Management System</h1>
+            <p id="spec">Efficiently manage patient records, appointments,<br> and hospital operations with our
+                user-friendly system.</p>
+            <a id="gtstrted"  class="btn" onclick="document.getElementById('id01').style.display='block'">Get Started</a>
+        </div>
+        <div class="content-image">
+            <img src="../Hospital Management System/assets/hositalbilding (2).jpg" alt="Hospital Image">
+        </div>
+        
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  
+  <form class="modal-content animate" action="/action_page.php">
+    
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+<br>
+      <label for="psw"><b>Password </b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+      <button id="lgn" type="submit">Login</button>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    </div>
+  </form>
+</div>
+
+</body>
+<footer>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Hospital Management System. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
