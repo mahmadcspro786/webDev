@@ -1,39 +1,88 @@
-h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     
-    background-color: aquamarine;
+ /* div p:first-child {
+    color: rgb(255, 81, 0);
+    background-color: rgb(187, 255, 0);
 }
-.one{
-    background-color: #141414;
-    color: beige;
-    font-size: medium;
+div p {
+    color: rgb(68, 0, 255);
+    background-color: rgb(166, 170, 156);
+} 
+:root{
+    --primary-color: rgb(255, 81, 0);
+    --primary-background-color: rgb(187, 255, 0);
 }
-.two{
-    background-color: #123bd1;
-    color: rgb(182, 182, 33);
-    font-size: medium;
+p{
+    color : var(--primary-color);
+    background-color : var(--primary-background-color);
 }
-.three{
-    background-color: #6a2d2d;
-    color: rgb(108, 53, 92);
-    font-size: medium;
+h2{
+    color : var(--primary-color);
+    background-color : var(--primary-background-color);
 }
-.four{
-    background-color: #23cd64;
-    color: rgb(28, 28, 22);
-    font-size: medium;
-}
-.five{
-    background-color: #de031c;
-    color: beige;
-    font-size: medium;
+
+@media screen and  (max-width: 600px) {
+    p{
+        color : red;
+        background-color :blue;
+    }
+    h2{
+        color :red;
+        background-color :blue;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+
+/* .container {
+    display: flex;
+ 
+} */
+
+.container div {
+    background-color: rgb(36, 129, 217);
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
 
 }
-*{ margin: 0;
- 
+/*     
+@media screen and (max-width: 600px) 
+{
+   .container {
+flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+} */
+        
+/*
+.box {
+    width: 100px;
+    height: 100px;
 }
-body{
-  background-image: url(D:/webdev/web/assets/beach.jpeg);
-  background-size: cover;
- b
+.box1 {
+    flex-grow: 1;
+}
+
+.box2 {
+    flex-shrink: 1;
+}
+.box3 {
+    flex-basis: 350px;
+}
+
+.box4 {
+    flex: 1;
+}
+
+.box5 {
+    order: -1;
+} */
+.container {
+  display: grid;
+    justify-content: space-evenly;
+    
 }
