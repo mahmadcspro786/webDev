@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: #14151b;
+    color: #f1f1f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+p {
+    color: #92939f;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* Input area */
+
+.input-area {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    gap: 10px;
+}
+
+#text-input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    background: #20212a;
+    border: 1px solid #333541;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+   #text-input:hover {transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(119, 112, 213, 0.25);}
+
+#text-input::placeholder {
+    color: #777987;
+}
+
+#text-input:focus {
+    border-color: #8980e8;
+}
+
+#add-btn {
+    padding: 0 25px;
+    background: #7770d5;
+    color: white;
+    border: none;
+    
+    border-radius: 9px;
+   font-size: 16px;
+   font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+#add-btn:hover {
+  
+       background: #8982e8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(119, 112, 213, 0.25);
+
+}
+
+/* Task list */
+
+#task-li {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+#task-li li {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 16px;
+    margin-bottom: 10px;
+    background: #20212a;
+    border: 1px solid #30313b;
+    border-radius: 9px;
+    transition: border-color 0.2s;
+}
+
+#task-li li:hover {
+    border-color: #55546e;
+}
+
+/* Checkbox */
+
+#task-li input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #8980e8;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Task text */
+
+#task-li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    color: #e5e5eb;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#task-li input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+/* Delete button */
+
+#task-li button {
+    padding: 7px 11px;
+    background: #30232a;
+    color: #e58b9b;
+    border: 1px solid #49303a;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.2s;
+}
+
+#task-li button:hover {
+    background: #6c6a6a;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    body {
+        padding: 55px 16px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    #task-li li {
+        padding: 13px 11px;
+        gap: 9px;
+    }
+}
