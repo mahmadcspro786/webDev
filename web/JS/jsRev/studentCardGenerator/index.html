@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Card Generator</h1>
+    
+    <div class="input">
+      <label
+        >Name:
+        <input type="text" id="name"  placeholder="Enter Full Name" required="required" />
+      </label>
+      
+      <label
+        >Class:
+        <select placeholder="Select your major" id="department" required="required">
+          <option>BS-CS(computer science)</option>
+          <option>BS-DS(data science)</option>
+          <option>BS-ME(mechanical engineering)</option>
+          <option>BS-CE(civil engineering)</option>
+        </select>
+      </label>
+      
+      <label>
+        Batch:
+        <input
+          id="batch"
+          type="number"
+          placeholder="Enter you Batch-Year"
+          required="required" />
+      </label>
+  
+      <label>
+            Profile Pick:
+        <input type="file" id="pick" accept="image/*" />
+      </label>
+      <div style="display: inline-flex;">
+   Bio: 
+      <section>
+       <textarea 
+       id="bio" placeholder="write a short bio about your self"
+          required="required" ></textarea>
+          
+      </section>
+
+      </div>
+    </div>
+    <div class="submit">
+        <button id="sub">Generate Card</button>
+    </div>
+<div class="output">
+
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

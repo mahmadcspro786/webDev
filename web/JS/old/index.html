@@ -1,0 +1,142 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <!-- <script src="practice.js"></script> -->
+</head>
+<body>
+
+    <h1>JavaScript Practice</h1>
+
+    <nav id="myNav">Navigation Example</nav>
+
+    <div id="myBox" class="box" data-user="Harry">
+        Hello World
+    </div>
+
+    <div class="box">Second Box</div>
+
+    <button id="btn">Click Me</button>
+
+    <div id="demoDiv" data-user="Ahmad">
+        Initial Text
+    </div>
+
+    <hr>
+
+    <script>
+        /* =========================================================
+           CHAPTER 7: WALKING THE DOM
+           ========================================================= */
+
+        // Topic 1: Navigating Child Nodes & Siblings
+        
+        // console.log("Document Head:", document.head);
+        // console.log("Document Body:", document.body);
+        // console.log("First Child:", document.body.firstChild);
+        // console.log(
+        //     "First Element Child:",
+        //     document.body.firstElementChild
+        // );
+        
+        // Topic 2: DOM Searching Methods
+        
+        // let elementById = document.getElementById("myBox");
+
+        // if (elementById) {
+        //     elementById.style.color = "red";
+        // }
+
+        // let queryFirst = document.querySelector(".box");
+        // let queryAll = document.querySelectorAll(".box");
+
+        // console.log("First Match:", queryFirst);
+        // console.log("All Matches:", queryAll);
+
+        // console.log(
+        //     "Matches .box?:",
+        //     elementById ? elementById.matches(".box") : false
+        // );
+        
+
+
+        /* =========================================================
+           CHAPTER 8: EVENTS & OTHER DOM PROPERTIES
+           ========================================================= */
+
+        // // Topic 1: innerHTML, outerHTML, textContent & Attributes
+        
+        // let demo = document.getElementById("demoDiv");
+
+        // if (demo) {
+        //     console.log("Inner HTML:", demo.innerHTML);
+        //     console.log("Outer HTML:", demo.outerHTML);
+        //     console.log("Text Content:", demo.textContent);
+
+        //     demo.innerHTML = "<b>Updated Content</b>";
+
+        //     demo.setAttribute(
+        //         "style",
+        //         "background-color: yellow; padding: 10px;"
+        //     );
+
+        //     console.log("Data Attribute:", demo.dataset.user);
+        // }
+        
+
+        // Topic 2: DOM Insertion Methods
+        
+        // let newElement = document.createElement("p");
+
+        // newElement.textContent =
+        //     "Yeh script se insert hua paragraph hai.";
+
+        // document.body.append(newElement);
+        
+
+        // Topic 3: setTimeout & setInterval
+        
+        // setTimeout(() => {
+        //     console.log("2 seconds baad!");
+        // }, 2000);
+
+        // let count = 0;
+
+        // let intervalId = setInterval(() => {
+        //     count++;
+
+        //     console.log("Interval count:", count);
+
+        //     if (count === 3) {
+        //         clearInterval(intervalId);
+        //         console.log("Interval stopped.");
+        //     }
+        // }, 1000);
+        
+        // Topic 4: Event Listeners
+        /*
+        let button = document.getElementById("btn");
+
+        if (button) {
+            function handleClick(event) {
+                alert("Button clicked!");
+                console.log("Event Type:", event.type);
+            }
+
+            button.addEventListener("click", handleClick);
+
+            // Test removing the listener:
+            // button.removeEventListener("click", handleClick);
+        }
+        */
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>
